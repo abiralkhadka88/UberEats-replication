@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="./assests/css/style.css " rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <link rel="icon" type="image/x-icon" href="./assests/icons/uber_favicon.ico">
+    <title>Uber Eats | Replication</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="landing-page-container">
+        <header>
+          <nav class="scroll-navbar">
+            <div class="brand">
+              <b><i class="fa-solid fa-bars" style="color: #000000"></i></b>
+              <img
+                src="https://d3i4yxtzktqr9n.cloudfront.net/web-eats-v2/97c43f8974e6c876.svg"
+                alt="Uber Eats"
+              />
+            </div>
+            <div class="search-bar">
+              <div class="delivery-address bg-white">
+                <i
+                  class="fa-solid fa-location-dot"
+                  style="color: #000000; padding: 8px"
+                ></i>
+                <input
+                  type="text"
+                  name="Delivery-Address"
+                  id=""
+                  placeholder="Enter deliver address"
+                />
+              </div>
+            </div>
+            <div class="nav_lists">
+              <a href=""
+                >
+                <span
+                  class="btn btn-bg-light btn-padding text-color-black btn-radius" id="login-btn"
+                  > <i class="fa-solid fa-user" style="color: #000000;padding: 4px;"></i><span class="login-text">Log in</span></span
+                ></a
+              >
+              <a href=""
+                ><span
+                  class="btn btn-bg-dark btn-padding text-color-white btn-radius"
+                  >Sign up</span
+                ></a
+              >
+            </div>
+          </nav>
+        </header>
+
+        <div class="landing-page-content">
+          <h1>Order food to your door</h1>
+          <div class="find-food">
+            <form action="">
+              <div class="find-food-elements">
+                <div class="delivery-address bg-white">
+                  <img src="./assests/icons/location-dot-solid.svg" alt="locaion">
+                  <input
+                    type="text"
+                    name="Delivery-Address"
+                    id=""
+                    placeholder="Enter deliver address"
+                  />
+                </div>
+
+                <div class="deliver">
+                  <img src="./assests/icons/time-fill.svg" alt="">
+                  <select>
+                  <option value="Deliver Now">Deliver Now</option>
+                </select></div>
+                
+                <a href="" class="find-food-btn btn btn-bg-dark" >Find Food</a>
+              </div>
+            </form>
+          </div>
+          <p>
+            <span class="sign-in-content cursor-pointer">Sign In</span> for your recent
+            addresses
+          </p>
+        </div>
+      </div>
+
+      <div class="mobile-app">
+        <div class="mobile-app-upper">
+          <img src="./assests/images/mobile-uber.png" alt="">
+          <p>There's more to love in the andriod app</p>
+        </div>
+        
+        <a href="https://play.google.com/store/apps/details?id=com.ubercab.eats&hl=en&gl=US&pli=1" class="mobile-app-btn btn btn-bg-light " >
+          <img src="./assests/images/andriod.png" alt="" height="24px;padding:8px">
+          <p>Get the app</p></a>
+      </div>
+
+      <div class="card-section">
+        <div class="card">
+          <a href="https://merchants.ubereats.com/us/en/s/signup/"><div class="card-image">
+            <img src="./assests/images/card-image-first.png" alt="" />
+          </div>
+          <div class="card-title"><p>Feed your employees</p></div>
+          <div class="card-text"><p>Create a business account</p></div></a>
+          
+        </div>
+
+        <div class="card">
+          <a href="https://merchants.ubereats.com/us/en/s/signup/"><div class="card-image">
+            <img src="./assests/images/card-image-second.png" alt="" />
+          </div>
+          <div class="card-title"><p>Your restaurant, delivered</p></div>
+          <div class="card-text"><p>Add your restaurant</p></div></a>
+          
+        </div>
+
+        <div class="card">
+          <a href="https://merchants.ubereats.com/us/en/s/signup/"><div class="card-image">
+            <img src="./assests/images/card-image-third.png" alt="" />
+          </div>
+          <div class="card-title"><p>Deliver with Uber Eats</p></div>
+          <div class="card-text"><p>Sign up to deliver</p></div></a>
+          
+        </div>
+      </div>
+
+      <div class="cities-section">
+        <div class="section-top">
+          <div class="left-heading">Cities near me</div>
+          <p class="right-heading text-color-blacks" id="view_cities_large">
+            View all 500+ cities
+          </p>
+        </div>
+        
+        <div class="map" style="width: 100%;">
+          <!-- <img src="./assests/images/map.png" alt="Map" /> -->
+          <div style="overflow:hidden;resize:none;max-width:100%;width:100%;height:360px;margin-top: 24px;"><div id="embed-map-display" style="height:100%; width:100%;max-width:100%;"><iframe style="height:100%;width:100%;border:0;" frameborder="0" src="https://www.google.com/maps/embed/v1/place?q=Kathmandu,+Nepal&key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8"></iframe></div><a class="our-googlemap-code" href="https://www.bootstrapskins.com/themes" id="enable-maps-data">premium bootstrap themes</a></div>
+        </div>
+
+        <div class="address-names">
+          <div class="column">
+            <ul>
+              <li>Akron</li>
+              <li>Albuquerque</li>
+              <li>Bridgeport</li>
+              <li>Concord</li>
+              <li>Dayton</li>
+              <li>El Paso</li>
+            </ul>
+          </div>
+          <div class="column">
+            <ul>
+              <li>Hartford</li>
+              <li>Houston</li>
+              <li>Indianapolis</li>
+              <li>McAllen</li>
+              <li>Mesa</li>
+              <li>Milwaukee</li>
+            </ul>
+          </div>
+          <div class="column">
+            <ul>
+              <li>Nashville</li>
+              <li>New Orleans</li>
+              <li>Oklahoma City</li>
+              <li>Omaha</li>
+              <li>Orlando</li>
+              <li>Palm Bay</li>
+            </ul>
+          </div>
+          <div class="column">
+            <ul>
+              <li>Providence</li>
+              <li>Queens</li>
+              <li>San Antonio</li>
+              <li>Stony Brook</li>
+              <li>Tucson</li>
+              <li>West Hollywood</li>
+            </ul>
+          </div>
+        </div>
+        <p class="right-heading text-color-blacks" id="view_cities_small">
+          View all 500+ cities
+        </p>
+      </div>
+      <hr />
+
+      <div class="cities-section">
+        <div class="section-top">
+          <div class="left-heading">Countries with Uber Eats</div>
+          <p class="right-heading text-color-blacks"  id="view_countries_large">View all countries</p>
+        </div>
+
+        <div class="address-names">
+          <div class="column">
+            <ul>
+              <li>Australia</li>
+              <li>Belgium</li>
+              <li>Canada</li>
+              <li>Chile</li>
+              <li>Costa Rica</li>
+              <li>Domician Republic</li>
+              <li>Ecuador</li>
+              <li>EL Salvador</li>
+            </ul>
+          </div>
+          <div class="column">
+            <ul>
+              <li>France</li>
+              <li>Germany</li>
+              <li>Guatemala</li>
+              <li>Ireland</li>
+
+              <li>Italy</li>
+              <li>Japan</li>
+              <li>Kenya</li>
+              <li>Mexico</li>
+            </ul>
+          </div>
+          <div class="column">
+            <ul>
+              <li>Netherlands</li>
+              <li>New Zealand</li>
+              <li>Panama</li>
+              <li>Poland</li>
+
+              <li>Portugal</li>
+              <li>South Africa</li>
+              <li>Spain</li>
+              <li>Sri Lanka</li>
+            </ul>
+          </div>
+          <div class="column">
+            <ul>
+              <li>Sweden</li>
+              <li>Switzerland</li>
+              <li>Taiwan(ROC)</li>
+              <li>United Kingdom</li>
+
+              <li>United States</li>
+            </ul>
+          </div>
+        </div>
+        <p class="right-heading text-color-blacks" id="view_countries_small">View all countries</p>
+      </div>
+      </div>
+      
+
+      <!-- Footer section -->
+      <footer>
+        <div class="upper-footer">
+          <div class="upper-footer-left">
+            <img
+              src="https://d3i4yxtzktqr9n.cloudfront.net/web-eats-v2/97c43f8974e6c876.svg"
+              alt="Uber Eats"
+            />
+            <div class="downloads">
+              <img src="./assests/images/appstore.svg" alt="Appstore" />
+              <img src="./assests/images/playstore.png" alt="playstore" />
+            </div>
+          </div>
+          <div class="upper-footer-right">
+            <ul>
+              <li>Get Help</li>
+              <li>Buy Gift Cards</li>
+              <li>Add to your restaurant</li>
+              <li>Sign up to deliver</li>
+              <li>Create a business Account</li>
+              <li>Promotion</li>
+            </ul>
+
+            <ul>
+              <li>Restaurant near me</li>
+              <li>View all cities</li>
+              <li>View all countries</li>
+              <li>Pickup near me</li>
+              <li>About Uber Eats</li>
+
+              <li style="display: flex; align-items: center;"><img src="./assests/icons/language_icon.svg" alt="language_icon" style="width: 16px;margin-right: 4px;">English</li>
+            </ul>
+          </div>
+        </div>
+        <!-- <hr class="hr-border-2" /> -->
+        <div class="middle-footer">
+          <div class="social-medias">
+            <a href=""
+              ><i
+                class="fa-brands fa-square-facebook"
+                style="color: #000000"
+              ></i
+            ></a>
+
+            <a href=""
+              ><i class="fa-brands fa-twitter" style="color: #000000"></i
+            ></a>
+
+            <i class="fa-brands fa-instagram" style="color: #000000"></i>
+          </div>
+          <div class="policies">
+            <a href="">Privacy policy</a>
+            <a href="">Terms</a>
+            <a href="">Pricing</a
+            ><a href="">Do not sell or share my personal information</a>
+          </div>
+        </div>
+
+        <div class="lower-footer">
+          <p>
+            This site is protected by reCAPTCHA and the Google Privacy Policy
+            and Terms of Service apply.
+          </p>
+          <p>© 2023 Uber Technologies Inc.</p>
+        </div>
+      </footer>
+    </div>
+  </body>
+
+  <script src="scripts.js"></script>
+</html>

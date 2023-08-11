@@ -1,0 +1,556 @@
+@import url("https://fonts.cdnfonts.com/css/uber-move-text");
+
+/* animations */
+@keyframes transitionLeftRight {
+  from {
+    transform: translateX(-10px);
+    width: 0px;
+  }
+  to {
+    transform: translateX(0px);
+  }
+}
+
+@keyframes transitionUpDown {
+  from {
+    transform: translatey(-100%);
+  }
+  to {
+    transform: translatey(0px);
+  }
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Uber Move Text", sans-serif;
+}
+
+.bg-white {
+  background-color: #ffffff;
+}
+.container {
+  background-color: #fff;
+  color: #000000;
+  max-width: 1360px;
+  margin: 0 auto;
+}
+
+.landing-page-container {
+  background-image: url(../images/background_image.webp);
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+  padding: 40px;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+}
+
+nav .brand {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  cursor: pointer;
+}
+
+.nav_lists {
+  display: flex;
+  gap: 11px;
+}
+.text-color-white {
+  color: #fff;
+}
+
+.text-color-black {
+  color: #000;
+}
+
+.btn {
+  font-weight: 500;
+  font-size: 16px;
+  min-height: 48px;
+  box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.1), 0px 4px 4px rgba(0, 0, 0, 0.04);
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #cccccc;
+}
+
+.btn-padding {
+  padding: 12px 16px;
+}
+
+.btn-bg-dark {
+  background-color: #000000;
+}
+
+.btn-bg-dark:hover {
+  background-color: #333333;
+}
+
+.btn-bg-light {
+  background-color: #ffffff;
+}
+
+.btn-radius {
+  border-radius: 500px;
+}
+
+/* after header */
+
+.landing-page-content {
+  margin-top: 157px;
+  animation: transitionUpDown 1s;
+  /* transition: all 1s ease-in-out; */
+}
+.landing-page-content h1 {
+  font-weight: 700;
+  font-size: 52px;
+  max-width: 60;
+  margin-bottom: 40px;
+}
+
+.find-food-elements {
+  display: flex;
+  text-align: center;
+  align-items: center;
+  gap: 8px;
+}
+
+.delivery-address {
+  width: 42.5%;
+  display: flex;
+  align-items: center;
+  height: 56px;
+  padding: 8px 16px;
+}
+
+.delivery-address img {
+  height: 24px;
+}
+
+input {
+  outline: none;
+  height: 100%;
+  width: 100%;
+  border: none;
+  margin-left: 16px;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+input::placeholder {
+  font-size: 16px;
+  text-align: left;
+  font-weight: 600;
+}
+
+.deliver {
+  display: flex;
+  align-items: center;
+  background-color: #ffffff;
+  padding: 8px 16px;
+  height: 56px;
+}
+
+.deliver img {
+  height: 24px;
+}
+
+select {
+  background-color: inherit;
+  outline: none;
+  margin-left: 16px;
+  border: none;
+  height: 56px;
+  font-weight: 500;
+  font-size: 16px;
+}
+
+.find-food-btn,
+.mobile-app-btn {
+  font-size: 18px;
+  padding: 16px;
+
+  color: white;
+  height: 56px;
+  min-width: max-content;
+
+  border-radius: 8px;
+  font-weight: 500;
+}
+
+.sign-in-content {
+  text-decoration: underline;
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
+
+/* After Navbar */
+
+.landing-page-content p {
+  margin-top: 24px;
+}
+
+/* For rendering download mobile app in mobile view */
+
+.mobile-app {
+  padding: 8px 16px;
+  display: none;
+  flex-flow: column wrap;
+  align-items: center;
+  justify-content: space-around;
+  text-align: center;
+}
+
+.mobile-app-upper {
+  display: flex;
+  align-items: center;
+  font-size: 30px;
+  font-weight: 500;
+}
+
+.mobile-app-btn {
+  width: 100%;
+  color: #000000;
+}
+
+.mobile-app a {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+}
+
+/* Cards Section */
+.card-section {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-top: 43px;
+  margin-bottom: 34px;
+  padding: 40px;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  width: 32%;
+}
+
+.card a {
+  text-decoration: none;
+  color: black;
+}
+
+.card img {
+  width: 100%;
+}
+
+.card-title {
+  font-size: 28px;
+  font-weight: 700;
+  margin-top: 8px;
+}
+
+.card-text {
+  font-size: 16px;
+  font-weight: 500;
+  text-decoration: underline;
+  margin-top: 8px;
+}
+
+.cities-section {
+  padding: 40px;
+}
+
+.section-top {
+  display: flex;
+  display: flex;
+  justify-content: space-between;
+}
+
+.left-heading {
+  font-size: 34px;
+  font-weight: 700;
+}
+
+.right-heading {
+  font-size: 16px;
+  font-weight: 500;
+  text-decoration: underline;
+  line-height: 26px;
+}
+
+#view_cities_small {
+  display: none;
+}
+
+#view_countries_small {
+  display: none;
+}
+
+.map img {
+  margin-top: 24px;
+  width: 100%;
+}
+
+.address-names {
+  margin-top: 24px;
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  column-gap: 1.6rem;
+}
+
+.column ul li {
+  font-weight: normal;
+  font-size: 16px;
+  list-style: none;
+  margin-bottom: 27px;
+  cursor: pointer;
+}
+
+footer {
+  display: flex;
+  flex-flow: column wrap;
+  padding: 40px;
+  border-top: 1px solid #e2e2e2;
+}
+
+.upper-footer {
+  display: grid;
+  grid-template-columns: 2fr 2fr;
+  column-gap: 1.6rem;
+  margin-top: 24px;
+  margin-bottom: 24px;
+}
+
+.upper-footer-left {
+  display: flex;
+  flex-flow: row wrap;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.upper-footer-left img {
+  width: 22%;
+}
+
+.upper-footer-left .downloads {
+  display: flex;
+  gap: 16px;
+}
+
+.upper-footer-right {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 1.6rem;
+}
+
+.upper-footer-right ul li {
+  font-weight: normal;
+  font-size: 16px;
+  list-style: none;
+  margin-bottom: 27px;
+  cursor: pointer;
+}
+
+.upper-footer-right ul li:hover {
+  text-decoration: underline;
+}
+
+.hr-border-2 {
+  color: white;
+  height: 1px;
+}
+
+.middle-footer {
+  padding: 16px;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  border-top: 1px solid #f6f6f6;
+}
+
+.social-medias {
+  display: flex;
+  gap: 24px;
+  cursor: pointer;
+}
+
+.policies {
+  display: flex;
+  flex-flow: row wrap;
+  gap: 40px;
+  font-size: 14px;
+  text-decoration: none;
+}
+
+.policies {
+  display: flex;
+  flex-flow: row wrap;
+  gap: 40px;
+  font-size: 14px;
+}
+
+.policies > a {
+  text-decoration: none;
+  color: black;
+}
+
+.policies > a:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.lower-footer {
+  padding: 16px;
+  display: flex;
+  flex-flow: row wrap;
+  gap: 40px;
+  justify-content: flex-end;
+  font-size: 14px;
+}
+
+.sticky {
+  z-index: 99;
+  display: flex;
+  background-color: #fff;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  width: 100%;
+  height: 96px;
+  top: 0;
+  left: 0;
+  padding: 40px;
+  box-shadow: rgb(226, 226, 226) 0px -2px 0px inset;
+}
+
+.search-bar {
+  width: 500px;
+  animation: transitionLeftRight 1s;
+  display: none;
+}
+
+.search-bar input {
+  background-color: #eee;
+}
+.search-bar .delivery-address {
+  width: 100%;
+}
+
+/* media-query */
+
+@media only screen and (max-width: 768px) {
+  .login-text {
+    display: none;
+    border-radius: 50%;
+  }
+  .find-food-elements {
+    display: flex;
+    flex-flow: column wrap;
+    width: 100%;
+  }
+
+  .find-food-elements .delivery-address,
+  .deliver {
+    width: 100%;
+  }
+
+  .find-food-elements select,
+  .find-food-btn {
+    width: 100%;
+  }
+
+  .mobile-app {
+    padding: 8px 16px;
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    justify-content: space-around;
+    text-align: center;
+  }
+
+  .card-section {
+    display: flex;
+    flex-flow: column wrap;
+    gap: 24px;
+  }
+
+  .card {
+    width: 100%;
+  }
+
+  .address-names {
+    margin-top: 24px;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    column-gap: 1.6rem;
+  }
+
+  #view_cities_small {
+    display: block;
+  }
+
+  #view_countries_small {
+    display: block;
+  }
+
+  #view_cities_large {
+    display: none;
+  }
+
+  #view_countries_large {
+    display: none;
+  }
+
+  .upper-footer-left {
+    display: flex;
+    flex-flow: column wrap;
+
+    justify-content: space-around;
+  }
+  .middle-footer {
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .social-medias {
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    gap: 24px;
+  }
+
+  .policies {
+    display: flex;
+    flex-flow: column wrap;
+    gap: 8px;
+    font-size: 14px;
+  }
+  .lower-footer {
+    display: flex;
+    flex-flow: column wrap;
+    gap: 8px;
+    justify-content: flex-start;
+  }
+}
