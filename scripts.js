@@ -1,3 +1,22 @@
+// sidenav bar
+
+closeNav();
+
+function openNav() {
+  document.getElementById("mySidenav").style.display = "flex";
+  document.body.style.overflow = "hidden";
+}
+
+function closeNav() {
+  document.getElementById("mySidenav").style.display = "none";
+  document.body.style.overflow = "auto";
+}
+
+// When the user scrolls the page, execute myFunction
+window.onscroll = function () {
+  myFunction();
+};
+
 // When the user scrolls the page, execute myFunction
 window.onscroll = function () {
   myFunction();
