@@ -1,25 +1,5 @@
 @import url("https://fonts.cdnfonts.com/css/uber-move-text");
 
-/* animations */
-@keyframes transitionLeftRight {
-  from {
-    transform: translateX(-10px);
-    width: 0px;
-  }
-  to {
-    transform: translateX(0px);
-  }
-}
-
-@keyframes transitionUpDown {
-  from {
-    transform: translatey(-100%);
-  }
-  to {
-    transform: translatey(0px);
-  }
-}
-
 * {
   margin: 0;
   padding: 0;
@@ -50,6 +30,118 @@ body {
   background-repeat: no-repeat;
   height: 100vh;
   padding: 40px;
+}
+
+.sidenav {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  width: 19em;
+  position: fixed;
+  z-index: 2;
+  top: 0;
+  left: 0;
+  background-color: #ffffff;
+  overflow-x: hidden;
+
+  padding: 60px 24px;
+  overflow: hidden;
+  justify-content: space-between;
+}
+
+.closebtn {
+  text-decoration: none;
+  color: #000000;
+}
+
+.sidebar-upper {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+.sidebar-buttons {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+}
+
+.sidebar-button {
+  height: 56px;
+  width: 90%;
+  background-color: #fff;
+  padding: 20px 16px;
+  text-align: center;
+  border-radius: 8px;
+}
+
+.sidebar-links {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 8px 16px;
+  /* margin-top: 24px; */
+}
+
+.sidebar-links a {
+  margin-bottom: 16px;
+  color: #000000;
+  text-decoration: none;
+  font-weight: 500;
+  margin: 12px 0px;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidebar-footer {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.sidebar-footer-upper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.sidebar-footer-lower {
+  display: flex;
+  gap: 4px;
+  align-items: center;
+  justify-content: center;
+}
+.sidebar-footer-lower .download-btn {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 12px;
+  font-size: 14px;
+  background: rgb(238, 238, 238);
+  border-radius: 500px;
+}
+
+.sidenav a:hover {
+  color: #333333;
+}
+
+.sidebar-buttons {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.sidebar-buttons a {
+  width: 100%;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
 }
 
 nav {
@@ -102,6 +194,14 @@ nav .brand {
 
 .btn-bg-light {
   background-color: #ffffff;
+}
+
+.btn-bg-gray {
+  background: rgb(238, 238, 238);
+}
+
+.btn-bg-gray:hover {
+  background: rgb(226, 226, 226);
 }
 
 .btn-radius {
@@ -428,7 +528,7 @@ footer {
 }
 
 .sticky {
-  z-index: 99;
+  z-index: 1;
   display: flex;
   background-color: #fff;
   justify-content: space-between;
@@ -458,6 +558,9 @@ footer {
 /* media-query */
 
 @media only screen and (max-width: 768px) {
+  .sidenav {
+    width: 100%;
+  }
   .login-text {
     display: none;
     border-radius: 50%;
